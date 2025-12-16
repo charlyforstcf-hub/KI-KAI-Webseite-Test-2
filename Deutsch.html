@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sprache & KI</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <button onclick="goHome()" class="home-btn"> Home</button>
+
+  <div class="progress-bar" id="progress-bar"></div>
+
+  <header>
+    <h1>Wie KI menschliche Sprache versteht</h1>
+    <p>Von Wörtern zu Nullen und Einsen</p>
+  </header>
+
+  <main class="content-page">
+    <article>
+      <h2>1.Einleitung</h2>
+      <p>
+        Sprache gilt als eines der wichtigsten Werkzeuge der menschlichen Kommunikation. Sie ermöglicht es, Wissen<br> weiterzugeben, Gefühle auszudrücken, komplexe Gedanken zu strukturieren und soziale Beziehungen zu gestalten. Seit<br> der Entstehung digitaler Technologien versuchen Wissenschaft und Technik, Maschinen beizubringen, Sprache zu verstehen,<br> zu verarbeiten und selbst zu erzeugen. Mit der Entwicklung leistungsfähiger Künstlicher Intelligenz (KI) hat dieser Bereich in<br> den vergangenen Jahren enorme Fortschritte gemacht.
+Diese Facharbeit untersucht das Verhältnis von Sprache und künstlicher Intelligenz: Wie gelingt es KI-Systemen, menschliche Sprache zu verarbeiten? Welche Chancen entstehen für Gesellschaft, Wissenschaft und Wirtschaft? Und welche ethischen Herausforderungen müssen berücksichtigt werden?
+Im Mittelpunkt steht dabei die Frage, ob KI Sprache lediglich imitiert oder ob sie in gewisser Weise auch „versteht“.
+      </p>
+
+      <h2>2. Grundlagen: Was ist Sprache?</h2>
+
+      <h3>2.1 Sprache als Kommunikationssystem</h3>
+      <p>
+        Sprache ist ein komplexes Zeichensystem, das aus Lauten, Wörtern, Grammatikregeln und Bedeutungen besteht. Sie erfüllt mehrere Funktionen:
+      </p>
+
+      <ul>
+        <li><strong>Kommunikativ:</strong>Austausch von Informationen</li>
+        <li><strong>Kognitiv:</strong>Strukturierung von Gedanken</li>
+        <li><strong>Sozial:</strong>Identitätsbildung und Gruppenzugehörigkeit</li>
+        <li><strobg>Kulturell:</strobg>Weitergabe von Wissen und Traditionen</li>
+      </ul>
+
+      <p>Sprachwissenschaftlich wird Sprache in verschiedene Ebenen unterteilt, darunter:</p>
+
+      <ul>
+        <li><strong>Phonologie:</strong>Lautstruktur</li>
+        <li><strong>Morphologie:</strong>Aufbau von Wörtern</li>
+        <li><strong>Syntax:</strong>Satzbau</li>
+        <li><Stronge>Semantik:</Stronge>Bedeutung</li>
+        <li><strong>Pragmatik:</strong>Sprachgebrauch im Kontext</li>
+      </ul>
+
+      <p>Für Künstliche Intelligenz stellt jede dieser Ebenen eine eigene Herausforderung dar, da Maschinen Sprache nicht von Natur<br> aus erwerben, sondern sie aus Daten lernen müssen.</p>
+
+      <h3>2.2 Natürlichsprachliche Kommunikation</h3>
+      <p>
+        Im Gegensatz zur formalen Sprache (wie etwa Programmiersprachen) ist menschliche Kommunikation oft ambig, unvollständig, ironisch oder kontextabhängig. Menschen erkennen Bedeutungen aus kulturellem Wissen, nonverbalen Signalen oder impliziten Annahmen.
+Gerade diese Aspekte erschweren die Modellierung durch künstliche Systeme – denn Maschinen fehlt das natürliche Weltwissen, das Menschen durch Lebenserfahrung aufbauen.
+      </p>
+
+      <h2>3. Künstliche Intelligenz und Sprachverarbeitung</h2>
+      <h3>3.1 Natural Language Processing (NLP)</h3>
+      <p>
+        Der Bereich, der sich mit der automatisierten Verarbeitung menschlicher Sprache beschäftigt, wird als Natural Language Processing (NLP) bezeichnet. Typische Aufgaben sind:
+      </p>
+      <ul>
+        <li><strong>Maschinelle Übersetzung</strong></li>
+        <li><strong>Sprachsynthese</strong></li>
+        <li><strong>Sentiment-Analyse</strong></li>
+        <li><strong>Textklassifikation</strong></li>
+        <li><strong>Frage-Antwort-Systeme</strong></li>
+        <li><strong>Chatbots und Dialogsysteme</strong></li>
+      </ul>
+      <p>
+        Frühe NLP-Systeme basierten auf regelbasierten Methoden, also auf explizit programmierten Grammatik- und Bedeutungsregeln. Diese Systeme waren jedoch begrenzt, da Sprache nur schwer vollständig formalisiert werden kann.
+      </p>
+
+      <h3>3.2 Der Aufstieg neuronaler Netze</h3>
+      <p>
+        Ein wichtiger Meilenstein war die Einführung künstlicher neuronaler Netze, insbesondere sogenannter Deep Learning–Modelle. Sie analysieren große Mengen von Texten und erkennen Muster, ohne dass ihnen Grammatikregeln explizit beigebracht werden müssen.
+Hierbei werden Wörter oder Sätze in mathematische Vektoren umgewandelt, die Bedeutungsähnlichkeiten abbilden können.
+Ein weiterer Durchbruch war die Entwicklung von Transformern (2017), einem Modelltyp, der große Textmengen effizient verarbeiten kann. Auf dieser Technologie basieren moderne Sprachmodelle wie GPT, LLaMA oder Gemini.
+      </p>
+
+      <h3>3.3 Sprachmodelle: Wie „verstehen“ sie Sprache?</h3>
+      <p>Große Sprachmodelle (Large Language Models, LLMs) lernen durch das Verarbeiten riesiger Textkorpora. Sie versuchen, das wahrscheinlichste nächste Wort in einem Satz vorherzusagen. Obwohl das Prinzip simpel klingt, entstehen durch die Menge der Daten und die Modellkomplexität durchaus beeindruckende Fähigkeiten:</p>
+
+      <ul>
+        <li><strong>grammatikalisch korrekte Sätze</strong></li>
+        <li><strong>inhaltlich konsistente Texte</strong></li>
+        <li><strong>Kontextbezug über viele Absätze</strong></li>
+        <li><strong>kreative oder analytische Antworten</strong></li>
+      </ul>
+
+      <p>Allerdings bedeutet dies nicht, dass Modelle Sprache „verstehen“ wie ein Mensch. Ihr „Wissen“ ist statistischer Natur; sie ziehen Muster aus Daten, statt Bedeutungen bewusst zu erfassen. Dennoch wirken ihre Ergebnisse oft erstaunlich menschlich.</p>
+
+      <h2>4. Anwendungsbereiche von Sprache und KI</h2>
+      <h3>4.1 Bildung und Forschung</h3>
+
+      <p>KI-Systeme können Lernende individuell unterstützen, etwa durch:</p>
+
+      <ul>
+        <li><strong>automatische Übersetzungen</strong></li>
+        <li><strong>intelligente Tutor-Systeme</strong></li>
+        <li><strong>Zusammenfassungen komplexer Texte</strong></li>
+        <li><strong>assistiertes Schreiben</strong></li>
+      </ul>
+      <p>Zudem beschleunigt KI die Forschung, z. B. durch Literaturauswertung oder das Generieren von Hypothesen.</p>
+
+      <h3>4.2 Wirtschaft und Arbeitswelt</h3>
+
+      <p>Sprach-KI findet Anwendung in:</p>
+
+      <ul>
+        <li><strong>automatisierten Kundendiensten</strong></li>
+        <li><strong>Voice-Assistenten</strong></li>
+        <li><strong>Dokumentenanalyse</strong></li>
+        <li><strong>Marketing und Textproduktion</strong></li>
+      </ul>
+
+      <p>Viele Unternehmen nutzen KI, um Kosten zu reduzieren oder Prozesse zu automatisieren. Gleichzeitig führt dies zu Diskussionen über Arbeitsplatzveränderungen.</p>
+
+      <h3>4.3 Medizin und Psychologie</h3>
+
+      <p>KI kann Sprache nutzen, um:</p>
+
+      <ul>
+        <li><strong>medizinische Berichte zu erstellen</strong></li>
+        <li><strong>psychische Zustände zu analysieren (z. B. Depression anhand sprachlicher Muster)</strong></li>
+        <li><strong>Patienten zu beraten oder zu triagieren</strong></li>
+      </ul>
+
+      <h3>4.4 Kreative Bereiche</h3>
+      <p>Moderne Systeme erzeugen:</p>
+
+      <ul>
+        <li><strong>Gedichte</strong></li>
+        <li><strong>Geschichten</strong></li>
+        <li><strong>Skripte</strong></li>
+        <li><strong>Werbetexte</strong></li>
+      </ul>
+
+      <p>Sie dienen dabei oft als Werkzeug oder Inspirationsquelle, nicht als Ersatz für menschliche Kreativität.</p>
+
+      <h2>5. Chancen und Potenziale</h2>
+      <h3>5.1 Demokratisierung von Information</h3>
+      <p>Durch KI können Sprachbarrieren überwunden werden. Automatische Übersetzungen ermöglichen einen weltweit gleichberechtigteren Zugang zu Wissen.</p>
+      <h3>5.2 Inklusion</h3>
+      <p>KI-gestützte Spracherkennung hilft Menschen mit Behinderungen, z. B.:</p>
+
+    <ul>
+      <li><strong>barrierefreie Kommunikation für Hörgeschädigte</strong></li>
+      <li><strong>Sprachsteuerung für Menschen mit motorischen Einschränkungen</strong></li>
+    </ul>
+
+    <h3>5.3 Effizienzsteigerung</h3>
+    <p>Viele alltägliche Aufgaben können automatisiert werden. Dadurch bleibt mehr Zeit für kreative, soziale oder strategische Tätigkeiten.</p>
+
+    <h2>6. Risiken und ethische Herausforderungen</h2>
+    <h3>6.1 Verzerrungen und Diskriminierung</h3>
+    <p>Sprachmodelle lernen aus menschlichen Daten – und übernehmen dabei auch menschliche Vorurteile.
+      Dies kann sich äußern in:</p>
+
+    <ul>
+      <li><strong>diskriminierenden Formulierungen</strong></li>
+      <li><strong>fehlerhaften Übersetzungen</strong></li>
+      <li><strong>problematischen Rollenbildern</strong></li>
+    </ul>  
+
+    <h3>6.2 Datenschutz und Privatsphäre</h3>
+    <p>Wenn KI mit sensiblen Daten arbeitet, besteht das Risiko, dass Informationen rekonstruiert oder missbraucht werden. Transparenz darüber, welche Daten ein Modell gelernt hat, ist daher essenziell.</p>
+    <h3>6.3 Urheberrecht</h3>
+    <p>KI-generierte Texte basieren auf gelernten Mustern aus urheberrechtlich geschützten Werken. Dies wirft Fragen auf über:</p>
+    <ul>
+      <li><strong></strong>geistiges Eigentum</li>
+      <li><strong></strong>kreative Originalität</li>
+      <li><strong></strong>Verantwortung für Inhalte</li>
+    </ul>
+
+    <h3>6.4 Gefahr der Desinformation</h3>
+    <p>Mit KI lassen sich täuschend echte Texte oder sogar Deepfakes erzeugen. Dadurch steigt die Gefahr von:</p>
+    <ul>
+      <li><strong>Fake News</strong></li>
+      <li><strong>manipulativer Propaganda</strong></li>
+      <li><strong>automatisierten Kommentar-Bots</strong></li>
+    </ul>
+    <p>Gesellschaftliche Mechanismen zur Sicherung von Wahrheit und Vertrauen werden dadurch herausgefordert.</p>
+
+    <h3>6.5 Verlust menschlicher Fähigkeiten</h3>
+    <p>Wenn KI zu stark in alltägliche Sprachprozesse eingreift, könnten Menschen ihre eigenen Formulierungs- und Ausdrucksfähigkeiten verlieren. Sprache ist jedoch ein zentraler Bestandteil der persönlichen und kulturellen Identität.</p>
+
+    <h2>7. Philosophische Frage: Kann KI Sprache wirklich verstehen ?</h2>
+    <p>Ein Kernpunkt der Debatte ist die Frage, ob KI bewusst oder bedeutungsvoll kommuniziert.
+      Zentral ist dabei:</p>
+     
+    <ul>
+      <li><strong>KI hat kein Bewusstsein, keine eigenen Absichten und kein echtes Erleben.</strong></li>
+      <li><strong>Sie verarbeitet Muster, keine Bedeutungen im menschlichen Sinn.</strong></li>
+      <li><strong></strong>Dennoch kann sie funktional ähnliche Aufgaben erfüllen wie ein Mensch – sogar oft schneller und in größerem Umfang.</strong></li>
+    </ul> 
+    <p>Philosophen wie John Searle argumentieren im berühmten „Chinesischen Zimmer“, dass symbolische Manipulation nicht mit Verständnis gleichzusetzen sei. Andere wiederum sehen in komplexen KI-Systemen eine neue Form von „technischem Verstehen“, das zwar nicht menschlich, aber dennoch funktional wirksam ist.</p>
+    
+    <h2>8. Fazit</h2>
+    <p>Sprache und Künstliche Intelligenz bilden eines der dynamischsten Forschungsfelder unserer Zeit. Moderne Sprachmodelle können erstaunlich menschenähnliche Texte generieren, Übersetzungen liefern, Wissen strukturieren und kreative Ideen hervorbringen. Gleichzeitig entstehen neue Herausforderungen für Ethik, Gesellschaft und Politik.
+      Ob KI Sprache wirklich „versteht“, bleibt eine offene Frage, die sowohl technische als auch philosophische Dimensionen besitzt. Unabhängig davon wird KI die Art, wie Menschen kommunizieren, lernen und arbeiten, nachhaltig verändern. Entscheidend wird sein, diese Technologie verantwortungsvoll zu gestalten, damit ihr Potenzial genutzt und ihre Risiken minimiert werden können.
+    </p>
+
+      <div class="sources">
+        <h3>Quellen</h3>
+        <ul>
+          <li>peter-krause.net/ki-blog/generative-ki/natural-language-processing</li>
+          <li>ki-campus.org/texts/chatbot</li>
+          <li>evoluce.de/neurolinguistik</li>
+          <li>nzz.ch/technologie/ki-versteht-sprache</li>
+        </ul>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p> Schulprojekt 2025 KI/KAI</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

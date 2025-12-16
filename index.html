@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KI Projekt - Startseite</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Projekt KI/KAI</h1>
+    <p>Von Charly F. und Konstantin K.</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Willkommen auf unserer KI-Infoseite!</h2>
+      <p>Hier erfährst du alles über Künstliche Intelligenz - von der Geschichte bis zur Funktionsweise.</p>
+      <p>Wenn du Fragen hast, nutze unseren Chatbot!</p>
+      <button onclick="openChatbot()" class="btn-primary"> Chatbot öffnen</button>
+    </section>
+
+    <section class="topics">
+      <h2>Unsere Themen</h2>
+      
+      <div class="topic-card">
+        <h3> Geschichte der KI</h3>
+        <p>Erfahre, wie sich KI von den Anfängen bis heute entwickelt hat.</p>
+        <a href="geschichte.html" class="btn-link">Mehr erfahren</a>
+      </div>
+
+      <div class="topic-card">
+        <h3> Sprache & KI</h3>
+        <p>Wie versteht eine KI menschliche Sprache? Hier wird es erklärt!</p>
+        <a href="deutsch.html" class="btn-link">Mehr erfahren</a>
+      </div>
+
+      <div class="topic-card">
+        <h3> Informatik & Mathematik</h3>
+        <p>Ohne Mathe keine KI - hier erfährst du wie das zusammenspielt.</p>
+        <a href="informatik.html" class="btn-link">Mehr erfahren</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Schulprojekt 2025 KI/KAI - Charly F. & Konstantin K.</p>
+  </footer>
+
+  <!-- Chatbot Popup -->
+  <div id="chatbot-popup" class="chatbot-hidden">
+    <div class="chat-header">
+      <span> Chatbot</span>
+      <button onclick="closeChatbot()" class="close-btn">&times;</button>
+    </div>
+    <div class="chat-messages" id="chat-messages"></div>
+    <div class="chat-input-box">
+      <input type="text" id="chat-input" placeholder="Schreib eine Nachricht...">
+      <button onclick="sendMessage()" class="send-btn">Senden</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
